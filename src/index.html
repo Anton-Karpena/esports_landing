@@ -3,11 +3,168 @@
   <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-		<link rel="stylesheet" href="style.scss">
+		<link rel="stylesheet" href="./styles/style.scss">
 		<script defer type="module" src="index.js"></script>
-    <title>FE Template</title>
+    <title>Esport Event</title>
   </head>
-  <body>
-    FE Template
+  <body class="body">
+    <div class="container container__header">
+      <header class="header">
+        <nav class="header__nav">
+          <a
+            class="header__nav-logo"
+            href="#">
+            <img src="./images/icon/Logo.svg" alt="Logo">
+          </a>
+          <div class="header__nav-media">
+            <a
+              class="header__nav-link"
+              href="https://twitter.com/natusvincere?ref_src=twsrc%5Egoogle%7Ctwcamp%5Eserp%7Ctwgr%5Eauthor"
+            >
+              <img src="./images/icon/Twitter.svg" alt="Twitter">
+            </a>
+
+            <a
+              class="header__nav-link"
+              href="https://www.twitch.tv/team/navi"
+            >
+              <img src="./images/icon/Twitch.svg" alt="Twitch">
+            </a>
+
+            <a
+              class="header__nav-link"
+              href="https://www.facebook.com/NatusVincere/"
+            >
+              <img src="./images/icon/Facebook.svg" alt="Facebook">
+            </a>
+
+            <a
+              class="header__nav-link"
+              href="https://vk.com/navi"
+            >
+              <img src="./images/icon/Vkontakte.svg" alt="Vkontakte">
+            </a>
+          </div>
+        </nav>
+        <a
+          class="header__pubg"
+          href="https://store.steampowered.com/app/578080/PUBG_BATTLEGROUNDS/"
+        >
+          <img
+            class="header__pubg-image"
+            src="./images/pictures/PUBG_image.png"
+            alt="PUBG"
+          >
+        </a>
+        <h1 class="header__title">
+          ESL Pro League CSGO
+        </h1>
+        <p class="header__text">
+          League CS:GO is the new online league in Counter-Strike:
+          Global Offensive, with $100,000 total prize pool. 16 teams
+          from Europe and the CIS will take part in the League, with
+          4 teams going to League through open qualifiers.
+        </p>
+        <div class="header__actions">
+          <a
+            href="#"
+            class="header__actions-read">
+            READ ANNOUNCMENT
+          </a>
+
+          <a
+            href="#"
+            class="header__actions-buy">
+            GET TICKETS
+          </a>
+        </div>
+      </header>
+    </div>
+    <main>
+      <div class="container container__schedule">
+        <article class="schedule">
+          <h2 class="schedule__title">Расписание и результаты</h2>
+          <div class="schedule__nav">
+            <a class="schedule__nav-matches" href="#">
+              Matches
+            </a>
+            <a class="schedule__nav-battles" href="#">
+              Battles
+            </a>
+          </div>
+          <div class="schedule__bets">
+            <div class="schedule__bets-card">1</div>
+            <div class="schedule__bets-card">2</div>
+            <div class="schedule__bets-card">3</div>
+            <div class="schedule__bets-card">4</div>
+          </div>
+          <div class="schedule__actions">
+          </div>
+        </article>
+      </div>
+      <div class="container container__rules">
+        <article class="rules">
+          <div class="rules__text">
+            <h2 class="rules__text-title">
+              Этапы проведения
+            </h2>
+            <p class="rules__text-description">
+              The path to every Major begins with the open
+              qualifiers for the regional Minor Championships,
+              spanning Europe, CIS, Americas, and Asia.
+              <a class="rules__text-description--active" href="#">
+                Here is
+              </a>
+              the schedule of every qualifying stage of StarLadder Major.
+            </p>
+          </div>
+          <div class="rules__order">
+            <div class="rules__order-card">
+              <img src="./images/icon/Rules_cup.svg" alt="cup">
+              <div>
+                <p>
+                  <strong>Registration</strong><br>
+                  29 sep, 19:00 – 20 nov, 10:00
+                </p>
+              </div>
+            </div>
+            <div class="rules__order-card">
+              <img src="./images/icon/Rules_shield.svg" alt="cup">
+              <div>
+                <p>
+                  Check-in<br>
+                  29 sep, 19:00 – 20 nov, 10:00
+                </p>
+              </div>
+            </div>
+            <div class="rules__order-card">
+              <img src="./images/icon/Rules_calendar.svg" alt="cup">
+              <div>
+                <p>
+                  Registration<br>
+                  29 sep, 19:00 – 20 nov, 10:00
+                </p>
+              </div>
+            </div>
+          </div>
+          <a
+            class="rules__button"
+            href="#"
+          >
+            Вы зарегистрированы
+          </a>
+        </article>
+      </div> 
+    </main>
+    <footer class="footer">  
+      <div class="container container__footer">
+        <p class="footer__text-register">
+          Зарегистрировано: 24
+        </p>
+        <p class="footer__text-left">
+          Осталось: 15мин 30сек
+        </p>
+      </div>
+    </footer>
   </body>
 </html>

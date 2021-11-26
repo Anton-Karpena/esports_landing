@@ -1,0 +1,64 @@
+.rules {
+  display: grid;
+  grid-template-columns: repeat(12, 1fr);
+
+  &__text {
+    grid-column: 1 / 6;
+    margin-top: 150px;
+
+    &-title {
+      font-style: 32px;
+      font-weight: 700;
+      color: $color-black;
+      margin: 0 0 20px;  
+    }
+  
+    &-description {
+      font-size: 18px;
+      font-weight: 500;
+      color: $color-black;
+      letter-spacing: 0.01em;
+      line-height: 30px;
+
+      &--active {
+        color: $color-white;
+        text-decoration: none;
+      }
+    }
+  }
+
+  &__order {
+    grid-column: 7 / 12;
+    margin: 120px 0 60px;
+    display: flex;
+
+    &-card {
+      text-align: center;
+      font-size: 16px;
+      font-weight: 400;
+      color: $color-black;
+      letter-spacing: 0.01em;
+    }
+  }
+
+  &__button {
+    grid-column: 8 / 10;
+    height: 60px;
+    width: 340px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 100px;
+    
+    background-color: $color-white;
+    color: $color-black;
+    text-decoration: none;
+    font-weight: 600;
+    font-size: 16px;
+    border-radius: 5px;
+
+    background-image: url(../images/icon/Rules_button.svg);
+    background-repeat: no-repeat;
+    background-position: 40px 18px;
+  }
+}

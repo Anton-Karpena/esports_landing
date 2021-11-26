@@ -1,0 +1,18 @@
+.footer {
+  &__text {
+    &-register {
+      font-weight: 700;
+      font-size: 32px;
+      color: $color-white;
+      margin: 0;
+      padding: 510px 0 0;
+    }
+
+    &-left {
+      font-weight: 700;
+      font-size: 25px;
+      color: $color-white;
+      margin: 0;
+    }
+  }
+}
