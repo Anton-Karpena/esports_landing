@@ -1,4 +1,7 @@
 .footer {
+  display: flex;
+  justify-content: end;
+
   &__text {
     &-register {
       font-weight: 700;
@@ -6,13 +9,69 @@
       color: $color-white;
       margin: 0;
       padding: 510px 0 0;
+      text-align: center;
     }
 
     &-left {
       font-weight: 700;
       font-size: 25px;
       color: $color-white;
-      margin: 0;
+      margin: 0 0 4px;
+      text-align: center;
+    }
+  }
+
+  &__table {
+    background-color: $color-orange;
+    margin-bottom: 56px;
+
+    &-head {
+      background-color: $color-orange;
+      color: $color-black;
+    }
+
+    &-body {
+      background-color: $background-grey;
+      color: $color-white;
+    }
+
+    &-row {
+      height: 56px;
+    }
+
+    &-columnA {
+      width: 72px;
+      font-weight: 400;
+      font-size: 20px;
+      text-align: center;
+    }
+
+    &-columnB {
+      width: 580px;
+      font-weight: 500;
+      font-size: 20px;
+
+      &-image {
+        padding: 0 10px 0 20px;
+      }
+    }
+  }
+
+  &__actions {
+    display: flex;
+    justify-content: space-evenly;
+    margin-bottom: 80px;
+
+    &-link {
+      text-decoration: none;
+      color: $color-white;
+      font-size: 20px;
+      font-weight: 700;
+      transition: color $transition-time;
+
+      &:hover {
+        color: $color-orange;
+      }
     }
   }
 }

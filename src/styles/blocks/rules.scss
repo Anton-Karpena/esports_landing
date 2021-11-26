@@ -34,15 +34,20 @@
 
     &-card {
       text-align: center;
-      font-size: 16px;
+      font-size: 14px;
       font-weight: 400;
       color: $color-black;
       letter-spacing: 0.01em;
+      margin-left: 40px;
+
+      &:first-child {
+        margin-left: 0;
+      }
     }
   }
 
   &__button {
-    grid-column: 8 / 10;
+    grid-column: 8 / 11;
     height: 60px;
     width: 340px;
     display: flex;
@@ -58,5 +63,11 @@
     background-image: url("../images/icon/Rules_button.svg");
     background-repeat: no-repeat;
     background-position: 40px 18px;
+    transition: all $transition-time;
+
+    &:hover {
+      background-color: $background-grey;
+      color: $color-white;
+    }
   }
 }

@@ -31,6 +31,14 @@
       &:first-child {
         padding: 0;
       }
+
+      &-image {
+        transition: transform $transition-time;
+
+        &:hover {
+          transform: scale(1.4);
+        }
+      }
     }
   }
 
@@ -72,11 +80,20 @@
       justify-content: center;
       align-items: center;
       text-decoration: none;
+      box-sizing: border-box;
       margin-right: 36px;
       color: $color-black;
       background-color: $color-orange;
       font-size: 16px;
       font-weight: 600;
+      transition: all $transition-time;
+
+      &:hover {
+        background-color: $color-black;
+        color: $color-white;
+        border: 1px solid $color-orange;
+        transform: translateY(-4px);
+      }
     }
 
     &-buy {
@@ -92,6 +109,12 @@
       font-size: 16px;
       font-weight: 600;
       border: 1px solid $color-orange;
+      transition: all $transition-time;
+
+      &:hover {
+        color: $color-white;
+        transform: translateY(-10px);
+      }
     }
   }
 }
