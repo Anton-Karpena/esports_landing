@@ -96,7 +96,7 @@ body {
   padding: 0 200px;
 }
 .container__header {
-  background-image: url("/Header_image1.50647eb0.png");
+  background-image: url("/Header_image1.9da3dba7.png");
   background-repeat: no-repeat;
   background-size: cover;
 }
@@ -107,7 +107,7 @@ body {
   background-color: #f3a917;
 }
 .container__footer {
-  background-image: url("/Footer_image.e53fb166.png");
+  background-image: url("/Footer_image.b3f729ec.png");
   background-repeat: no-repeat;
   background-size: cover;
 }
@@ -217,7 +217,7 @@ body {
   font-weight: 600;
   font-size: 16px;
   border-radius: 5px;
-  background-image: url("/Rules_button.3ad87205.svg");
+  background-image: url("/Rules_button.72503c70.svg");
   background-repeat: no-repeat;
   background-position: 40px 18px;
 }
@@ -236,4 +236,4 @@ body {
   margin: 0;
 }
 
-/*# sourceMappingURL=/style.ff1c4cab.css.map */
+/*# sourceMappingURL=/style.97fcb138.css.map */
