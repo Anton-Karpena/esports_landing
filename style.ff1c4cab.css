@@ -1,4 +1,8 @@
 @import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&display=swap");
+* {
+  scroll-behavior: smooth;
+}
+
 body {
   margin: 0;
   font-family: Montserrat, sans-serif;
@@ -35,6 +39,12 @@ body {
 .header__nav-link:first-child {
   padding: 0;
 }
+.header__nav-link-image {
+  transition: transform 0.3s;
+}
+.header__nav-link-image:hover {
+  transform: scale(1.4);
+}
 .header__pubg {
   grid-column: 1/7;
   margin-bottom: 36px;
@@ -69,11 +79,19 @@ body {
   justify-content: center;
   align-items: center;
   text-decoration: none;
+  box-sizing: border-box;
   margin-right: 36px;
   color: #000;
   background-color: #f3a917;
   font-size: 16px;
   font-weight: 600;
+  transition: all 0.3s;
+}
+.header__actions-read:hover {
+  background-color: #000;
+  color: #fff;
+  border: 1px solid #f3a917;
+  transform: translateY(-4px);
 }
 .header__actions-buy {
   width: 240px;
@@ -88,6 +106,11 @@ body {
   font-size: 16px;
   font-weight: 600;
   border: 1px solid #f3a917;
+  transition: all 0.3s;
+}
+.header__actions-buy:hover {
+  color: #fff;
+  transform: translateY(-10px);
 }
 
 .container {
@@ -198,13 +221,17 @@ body {
 }
 .rules__order-card {
   text-align: center;
-  font-size: 16px;
+  font-size: 14px;
   font-weight: 400;
   color: #000;
   letter-spacing: 0.01em;
+  margin-left: 40px;
+}
+.rules__order-card:first-child {
+  margin-left: 0;
 }
 .rules__button {
-  grid-column: 8/10;
+  grid-column: 8/11;
   height: 60px;
   width: 340px;
   display: flex;
@@ -220,20 +247,75 @@ body {
   background-image: url("/Rules_button.3ad87205.svg");
   background-repeat: no-repeat;
   background-position: 40px 18px;
+  transition: all 0.3s;
+}
+.rules__button:hover {
+  background-color: #292a2f;
+  color: #fff;
 }
 
+.footer {
+  display: flex;
+  justify-content: end;
+}
 .footer__text-register {
   font-weight: 700;
   font-size: 32px;
   color: #fff;
   margin: 0;
   padding: 510px 0 0;
+  text-align: center;
 }
 .footer__text-left {
   font-weight: 700;
   font-size: 25px;
   color: #fff;
-  margin: 0;
+  margin: 0 0 4px;
+  text-align: center;
+}
+.footer__table {
+  background-color: #f3a917;
+  margin-bottom: 56px;
+}
+.footer__table-head {
+  background-color: #f3a917;
+  color: #000;
+}
+.footer__table-body {
+  background-color: #292a2f;
+  color: #fff;
+}
+.footer__table-row {
+  height: 56px;
+}
+.footer__table-columnA {
+  width: 72px;
+  font-weight: 400;
+  font-size: 20px;
+  text-align: center;
+}
+.footer__table-columnB {
+  width: 580px;
+  font-weight: 500;
+  font-size: 20px;
+}
+.footer__table-columnB-image {
+  padding: 0 10px 0 20px;
+}
+.footer__actions {
+  display: flex;
+  justify-content: space-evenly;
+  margin-bottom: 80px;
+}
+.footer__actions-link {
+  text-decoration: none;
+  color: #fff;
+  font-size: 20px;
+  font-weight: 700;
+  transition: color 0.3s;
+}
+.footer__actions-link:hover {
+  color: #f3a917;
 }
 
 /*# sourceMappingURL=/style.ff1c4cab.css.map */
