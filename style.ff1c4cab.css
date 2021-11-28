@@ -321,4 +321,22 @@ body {
   color: #f3a917;
 }
 
+.slider {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+.slide-box {
+  height: 996px;
+  width: 1920px;
+  overflow: hidden;
+}
+
+.slide {
+  height: 100%;
+  width: 100%;
+}
+
 /*# sourceMappingURL=/style.ff1c4cab.css.map */
