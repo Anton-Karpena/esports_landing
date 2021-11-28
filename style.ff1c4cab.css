@@ -5,10 +5,14 @@
 
 body {
   margin: 0;
+  background-color: #000;
   font-family: Montserrat, sans-serif;
 }
 
-.header {
+.header__wrapper {
+  max-width: 1520px;
+  margin: 0 auto;
+  padding: 0 200px;
   display: grid;
   grid-template-columns: repeat(12, 1fr);
 }
@@ -110,31 +114,14 @@ body {
 }
 .header__actions-buy:hover {
   color: #fff;
-  transform: translateY(-10px);
+  transform: translateY(-4px);
 }
 
-.container {
-  max-width: 1600px;
+.schedule__wrapper {
+  max-width: 1520px;
   margin: 0 auto;
   padding: 0 200px;
 }
-.container__header {
-  background-image: url("/Header_image1.50647eb0.png");
-  background-repeat: no-repeat;
-  background-size: cover;
-}
-.container__schedule {
-  background-color: #000;
-}
-.container__rules {
-  background-color: #f3a917;
-}
-.container__footer {
-  background-image: url("/Footer_image.e53fb166.png");
-  background-repeat: no-repeat;
-  background-size: cover;
-}
-
 .schedule__title {
   padding-top: 140px;
   margin: 0 0 40px;
@@ -190,6 +177,12 @@ body {
 }
 
 .rules {
+  background-color: #f3a917;
+}
+.rules__wrapper {
+  max-width: 1520px;
+  margin: 0 auto;
+  padding: 0 200px;
   display: grid;
   grid-template-columns: repeat(12, 1fr);
 }
@@ -221,14 +214,11 @@ body {
 }
 .rules__order-card {
   text-align: center;
-  font-size: 14px;
-  font-weight: 400;
-  color: #000;
-  letter-spacing: 0.01em;
-  margin-left: 40px;
 }
-.rules__order-card:first-child {
-  margin-left: 0;
+.rules__order-card-text {
+  font-size: 16px;
+  letter-spacing: 0.01em;
+  font-weight: 400;
 }
 .rules__button {
   grid-column: 8/11;
@@ -255,22 +245,34 @@ body {
 }
 
 .footer {
+  background-image: url(/Footer_image.e53fb166.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+.footer__wrapper {
+  max-width: 1520px;
+  margin: 0 auto;
+  padding: 0 200px;
   display: flex;
-  justify-content: end;
+  flex-direction: column;
+  align-items: end;
+}
+.footer__timer {
+  margin: 510px 124px 4px;
 }
 .footer__text-register {
   font-weight: 700;
   font-size: 32px;
   color: #fff;
   margin: 0;
-  padding: 510px 0 0;
   text-align: center;
 }
 .footer__text-left {
   font-weight: 700;
   font-size: 25px;
   color: #fff;
-  margin: 0 0 4px;
+  margin: 0;
   text-align: center;
 }
 .footer__table {
@@ -303,9 +305,10 @@ body {
   padding: 0 10px 0 20px;
 }
 .footer__actions {
+  margin-bottom: 80px;
+  width: 652px;
   display: flex;
   justify-content: space-evenly;
-  margin-bottom: 80px;
 }
 .footer__actions-link {
   text-decoration: none;
