@@ -15,7 +15,7 @@
   "keywords": [],
   "author": "",
   "license": "ISC",
-  "homepage": "https://github.com/Anton-Karpena/project_template",
+  "homepage": ".",
   "devDependencies": {
     "@linthtml/linthtml": "^0.8.0",
     "@parcel/transformer-sass": "^2.0.1",
