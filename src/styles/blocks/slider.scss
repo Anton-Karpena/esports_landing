@@ -1,17 +1,74 @@
 .slider {
   display: flex;
   justify-content: center;
-  align-items: center;
-  text-align: center;
-}
-
-.slide-box {
-  height: 996px;
-  width: 1920px;
+  position: absolute;
+  left: 0;
+  right: 0;
   overflow: hidden;
+
+  &__slides {
+    display: flex;
+    justify-content: center;
+    position: relative;
+  }
+
+  &__slide {
+    display: none;
+  }
+
+  &__next {
+    width: 200px;
+    height: 100%;
+    background-color: rgba(30, 30, 30, 0.1);
+    position: absolute;
+    right: 0;
+    transition: $transition-time;
+
+    &:hover {
+      background-color: rgba(30, 30, 30, 0.5);
+      cursor: pointer;
+    }
+  }
+
+  &__prev {
+    width: 200px;
+    height: 100%;
+    background-color: rgba(30, 30, 30, 0.1);
+    position: absolute;
+    left: 0;
+    transition: $transition-time;
+
+    &:hover {
+      background-color: rgba(30, 30, 30, 0.5);
+      cursor: pointer;
+    }
+  }
+
+  &__dots {
+    position: absolute;
+    align-self: flex-end;
+    display: flex;
+  }
+
+  &__dot {
+    width: 20px;
+    height: 20px;
+    border: 1px solid $color-white;
+    border-radius: 40px;
+    margin: 0 10px 40px;
+    transition: $transition-time;
+
+    &:hover {
+      background-color: $color-white;
+      cursor: pointer;
+    }
+
+    &.active {
+      background-color: $color-white;
+    }
+  }
 }
 
-.slide {
-  height: 100%;
-  width: 100%;
+.active {
+  display: block;
 }

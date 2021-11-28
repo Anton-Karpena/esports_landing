@@ -15,6 +15,7 @@
     align-items: center;
     margin: 12px 0 190px;
     position: relative;
+    z-index: 1;
 
     &::after {
       content: "";
@@ -51,6 +52,7 @@
   &__pubg {
     grid-column: 1/7;
     margin-bottom: 36px;
+    z-index: 1;
 
     &-image {
       width: 190px;
@@ -64,20 +66,23 @@
     font-weight: 700;
     font-size: 60px;
     color: $color-white;
+    z-index: 1;
   }
 
   &__text {
     grid-column: 1 / 7;
-    margin-bottom: 220px;
+    margin-bottom: 180px;
     color: $color-light-grey;
     font-weight: 400;
     font-size: 18px;
+    z-index: 1;
   }
 
   &__actions {
     grid-column: 1 / 7;
     margin-bottom: 200px;
     display: flex;
+    z-index: 1;
 
     &-read {
       width: 240px;

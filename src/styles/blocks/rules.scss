@@ -73,5 +73,10 @@
       background-color: $background-grey;
       color: $color-white;
     }
+
+    &:focus {
+      background-color: $background-grey;
+      color: $color-white;
+    }
   }
 }

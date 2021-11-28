@@ -2,9 +2,8 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
     <link rel="stylesheet" href="./styles/style.scss" />
-    <script defer type="module" src="index.js"></script>
     <title>Esport Event</title>
     <link
       rel="shortcut icon"
@@ -13,14 +12,27 @@
     />
   </head>
   <body>
-    <div class="slider" hidden>
-      <div class="slide-box">
-        <img class="slide" src="./images/pictures/Header_image1.png"/>
-        <img class="slide" src="./images/pictures/Header_image2.png"/>
-        <img class="slide" src="./images/pictures/Header_image3.png"/>
-      </div>
-    </div>
     <header class="header">
+      <div class="slider">
+        <div class="slider__slides">
+          <div class="slider__slide active">
+            <img class="slider__image" src="./images/pictures/Header_image1.png">
+          </div>
+          <div class="slider__slide">
+            <img class="slider__image" src="./images/pictures/Header_image2.png">
+          </div>
+          <div class="slider__slide">
+            <img class="slider__image" src="./images/pictures/Header_image3.png">
+          </div>
+          <div class="slider__prev" id="btn-prev"></div>
+          <div class="slider__next" id="btn-next"></div>
+        </div>
+        <div class="slider__dots">
+          <div class="slider__dot active"></div>
+          <div class="slider__dot"></div>
+          <div class="slider__dot"></div>
+        </div>
+      </div>
       <div class="header__wrapper">
         <nav class="header__nav">
           <a class="header__nav-logo" href="#">
@@ -105,7 +117,7 @@
       </div>
     </header>
     <main>
-      <article class="schedule">
+      <article class="schedule" id="schedule">
         <div class="schedule__wrapper">
           <h2 class="schedule__title">Расписание и результаты</h2>
           <div class="schedule__nav">
@@ -121,7 +133,7 @@
           <div class="schedule__actions"></div>
         </div>
       </article>
-      <article class="rules">
+      <article class="rules" id="rules">
         <div class="rules__wrapper">
           <div class="rules__text">
             <h2 class="rules__text-title">Этапы проведения</h2>
@@ -129,7 +141,7 @@
               The path to every Major begins with the open qualifiers for the
               regional Minor Championships, spanning Europe, CIS, Americas, and
               Asia.
-              <a class="rules__text-description--active" href="#"> Here is </a>
+              <a class="rules__text-description--active" href="#schedule"> Here is </a>
               the schedule of every qualifying stage of StarLadder Major.
             </p>
           </div>
@@ -164,15 +176,15 @@
     </main>
     <footer class="footer">
       <div class="footer__wrapper">
-        <div class="footer__timer">
+        <div class="footer__time">
           <p class="footer__text-register">Зарегистрировано: 24</p>
-          <p class="footer__text-left">Осталось: 15мин 30сек</p>
+          <p class="footer__text-timer" id="timer"></p>
         </div>
         <table class="footer__table">
           <thead class="footer__table-head">
             <tr class="footer__table-row">
-              <td class="footer__table-columnA">#</td>
-              <td class="footer__table-columnB">Team</td>
+              <td class="footer__table-head-A">#</td>
+              <td class="footer__table-head-B">Team</td>
             </tr>
           </thead>
           <tbody class="footer__table-body">
@@ -287,10 +299,11 @@
         </table>
         <div class="footer__actions">
           <a class="footer__actions-link" href="#"> SUPPORT </a>
-          <a class="footer__actions-link" href="#"> RULES </a>
+          <a class="footer__actions-link" href="#rules"> RULES </a>
           <a class="footer__actions-link" href="#"> FAQ </a>
         </div>
       </div>
     </footer>
+    <script defer type="module" src="index.js"></script>
   </body>
 </html>
