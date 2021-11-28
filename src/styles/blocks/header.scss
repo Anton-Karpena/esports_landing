@@ -1,6 +1,12 @@
 .header {
-  display: grid;
-  grid-template-columns: repeat(12, 1fr);
+
+  &__wrapper {
+    max-width: 1520px;
+    margin: 0 auto;
+    padding: 0 200px;
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+  }
 
   &__nav {
     grid-column: 1 / 7;
@@ -113,7 +119,7 @@
 
       &:hover {
         color: $color-white;
-        transform: translateY(-10px);
+        transform: translateY(-4px);
       }
     }
   }

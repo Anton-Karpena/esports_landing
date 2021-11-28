@@ -1,6 +1,21 @@
 .footer {
-  display: flex;
-  justify-content: end;
+  background-image: url(../images/pictures/Footer_image.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+
+  &__wrapper {
+    max-width: 1520px;
+    margin: 0 auto;
+    padding: 0 200px;
+    display: flex;
+    flex-direction: column;
+    align-items: end;
+  }
+
+  &__timer {
+    margin: 510px 124px 4px;
+  }
 
   &__text {
     &-register {
@@ -8,7 +23,6 @@
       font-size: 32px;
       color: $color-white;
       margin: 0;
-      padding: 510px 0 0;
       text-align: center;
     }
 
@@ -16,7 +30,7 @@
       font-weight: 700;
       font-size: 25px;
       color: $color-white;
-      margin: 0 0 4px;
+      margin: 0;
       text-align: center;
     }
   }
@@ -58,9 +72,10 @@
   }
 
   &__actions {
+    margin-bottom: 80px;
+    width: 652px;
     display: flex;
     justify-content: space-evenly;
-    margin-bottom: 80px;
 
     &-link {
       text-decoration: none;
