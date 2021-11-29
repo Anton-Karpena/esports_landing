@@ -19,13 +19,13 @@
   &__next {
     width: 200px;
     height: 100%;
-    background-color: rgba(30, 30, 30, 0.1);
+    background-color: #1e1e1e1a;
     position: absolute;
     right: 0;
     transition: $transition-time;
 
     &:hover {
-      background-color: rgba(30, 30, 30, 0.5);
+      background-color: #1e1e1e80;
       cursor: pointer;
     }
   }
@@ -33,13 +33,13 @@
   &__prev {
     width: 200px;
     height: 100%;
-    background-color: rgba(30, 30, 30, 0.1);
+    background-color: #1e1e1e1a;
     position: absolute;
     left: 0;
     transition: $transition-time;
 
     &:hover {
-      background-color: rgba(30, 30, 30, 0.5);
+      background-color: #1e1e1e80;
       cursor: pointer;
     }
   }
@@ -53,18 +53,18 @@
   &__dot {
     width: 20px;
     height: 20px;
-    border: 1px solid $color-white;
+    background-color: $color-white;
     border-radius: 40px;
     margin: 0 10px 40px;
     transition: $transition-time;
 
     &:hover {
-      background-color: $color-white;
+      background-color: $color-orange;
       cursor: pointer;
     }
 
     &.active {
-      background-color: $color-white;
+      background-color: $color-orange;
     }
   }
 }

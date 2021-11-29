@@ -2,7 +2,7 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="viewport" content="width=device-width, initial-scale=0.8" />
     <link rel="stylesheet" href="./styles/style.scss" />
     <title>Esport Event</title>
     <link
@@ -16,13 +16,22 @@
       <div class="slider">
         <div class="slider__slides">
           <div class="slider__slide active">
-            <img class="slider__image" src="./images/pictures/Header_image1.png">
+            <img
+              class="slider__image"
+              src="./images/pictures/Header_image1.png"
+            />
           </div>
           <div class="slider__slide">
-            <img class="slider__image" src="./images/pictures/Header_image2.png">
+            <img
+              class="slider__image"
+              src="./images/pictures/Header_image2.png"
+            />
           </div>
           <div class="slider__slide">
-            <img class="slider__image" src="./images/pictures/Header_image3.png">
+            <img
+              class="slider__image"
+              src="./images/pictures/Header_image3.png"
+            />
           </div>
           <div class="slider__prev" id="btn-prev"></div>
           <div class="slider__next" id="btn-next"></div>
@@ -47,7 +56,7 @@
             >
               <img
                 class="header__nav-link-image"
-                src="./images/icon/Twitter.svg"
+                src="./images/icon/Header/Twitter.svg"
                 alt="Twitter"
               />
             </a>
@@ -60,7 +69,7 @@
             >
               <img
                 class="header__nav-link-image"
-                src="./images/icon/Twitch.svg"
+                src="./images/icon/Header/Twitch.svg"
                 alt="Twitch"
               />
             </a>
@@ -73,7 +82,7 @@
             >
               <img
                 class="header__nav-link-image"
-                src="./images/icon/Facebook.svg"
+                src="./images/icon/Header/Facebook.svg"
                 alt="Facebook"
               />
             </a>
@@ -86,7 +95,7 @@
             >
               <img
                 class="header__nav-link-image"
-                src="./images/icon/Vkontakte.svg"
+                src="./images/icon/Header/Vkontakte.svg"
                 alt="Vkontakte"
               />
             </a>
@@ -94,6 +103,8 @@
         </nav>
         <a
           class="header__pubg"
+          target="_blank"
+          rel="noopener"
           href="https://store.steampowered.com/app/578080/PUBG_BATTLEGROUNDS/"
         >
           <img
@@ -121,16 +132,265 @@
         <div class="schedule__wrapper">
           <h2 class="schedule__title">Расписание и результаты</h2>
           <div class="schedule__nav">
-            <a class="schedule__nav-matches" href="#"> Matches </a>
-            <a class="schedule__nav-battles" href="#"> Battles </a>
+            <div class="schedule__nav-matches" id="matches">Matches</div>
+            <div class="schedule__nav-battles" id="battles">Battles</div>
           </div>
-          <div class="schedule__bets">
-            <div class="schedule__bets-card">1</div>
-            <div class="schedule__bets-card">2</div>
-            <div class="schedule__bets-card">3</div>
-            <div class="schedule__bets-card">4</div>
+
+          <div class="schedule__cards">
+            <div class="schedule__matches">
+              <div class="card">
+                <div class="card__matches active" id="matchesList">
+                  <div class="card__matches-wrapper">
+                    <div class="card-bet">
+                      <div class="card-bet-top">
+                        <p class="card-bet__event">Asia Minor: Play-Off</p>
+                        <div class="card-bet__date">
+                          <p class="card-bet__date-month">29 Oct</p>
+                          <p class="card-bet__date-hour">19:00</p>
+                        </div>
+                      </div>
+                      <div class="card-bet__separator"></div>
+                      <div class="card-bet__teams">
+                        <img
+                          class="card-bet__teamA"
+                          src="./images/icon/Card/TeamA.svg"
+                          alt="Business assosiates"
+                        />
+                        <img
+                          class="card-bet__teamB"
+                          src="./images/icon/Card/TeamB.svg"
+                          alt="Forza esports"
+                        />
+                      </div>
+                      <div class="card-bet__bet">
+                        <p class="card-bet__name">Regina Watson</p>
+                        <p class="card-bet__coef">3.22</p>
+                      </div>
+                      <div class="card-bet__bet">
+                        <p class="card-bet__name">Kathryn Jones</p>
+                        <p class="card-bet__coef">2.21</p>
+                      </div>
+                      <div class="card-bet__bottom">
+                        <p class="card-bet__timer">
+                          Starts in: 5 hours 39 min • Bо 3
+                        </p>
+                        <img
+                          class="card-bet__sponsor"
+                          src="./images/icon/Card/ggbet.svg"
+                          alt="ggbet"
+                        />
+                      </div>
+                    </div>
+
+                    <div class="card-bet">
+                      <div class="card-bet-top">
+                        <p class="card-bet__event">Asia Minor: Play-Off</p>
+                        <div class="card-bet__date">
+                          <p class="card-bet__date-month">29 Oct</p>
+                          <p class="card-bet__date-hour">19:00</p>
+                        </div>
+                      </div>
+                      <div class="card-bet__teams">
+                        <img
+                          class="card-bet__teamA"
+                          src="./images/icon/Card/TeamA.svg"
+                          alt="Business assosiates"
+                        />
+                        <img
+                          class="card-bet__teamB"
+                          src="./images/icon/Card/TeamB.svg"
+                          alt="Forza esports"
+                        />
+                      </div>
+                      <div class="card-bet__bet">
+                        <p class="card-bet__name">Regina Watson</p>
+                        <p class="card-bet__coef">3.22</p>
+                      </div>
+                      <div class="card-bet__bet">
+                        <p class="card-bet__name">Kathryn Jones</p>
+                        <p class="card-bet__coef">2.21</p>
+                      </div>
+                      <div class="card-bet__bottom">
+                        <p class="card-bet__timer">
+                          Starts in: 5 hours 39 min • Bо 3
+                        </p>
+                        <img
+                          class="card-bet__sponsor"
+                          src="./images/icon/Card/ggbet.svg"
+                          alt="ggbet"
+                        />
+                      </div>
+                    </div>
+
+                    <div class="card-bet">
+                      <div class="card-bet-top">
+                        <p class="card-bet__event">Asia Minor: Play-Off</p>
+                        <div class="card-bet__date">
+                          <p class="card-bet__date-month">29 Oct</p>
+                          <p class="card-bet__date-hour">19:00</p>
+                        </div>
+                      </div>
+                      <div class="card-bet__separator"></div>
+                      <div class="card-bet__teams">
+                        <img
+                          class="card-bet__teamA"
+                          src="./images/icon/Card/TeamA.svg"
+                          alt="Business assosiates"
+                        />
+                        <img
+                          class="card-bet__teamB"
+                          src="./images/icon/Card/TeamB.svg"
+                          alt="Forza esports"
+                        />
+                      </div>
+                      <div class="card-bet__bet">
+                        <p class="card-bet__name">Regina Watson</p>
+                        <p class="card-bet__coef">3.22</p>
+                      </div>
+                      <div class="card-bet__bet">
+                        <p class="card-bet__name">Kathryn Jones</p>
+                        <p class="card-bet__coef">2.21</p>
+                      </div>
+                      <div class="card-bet__bottom">
+                        <p class="card-bet__timer">
+                          Starts in: 5 hours 39 min • Bо 3
+                        </p>
+                        <img
+                          class="card-bet__sponsor"
+                          src="./images/icon/Card/ggbet.svg"
+                          alt="ggbet"
+                        />
+                      </div>
+                    </div>
+
+                    <div class="card-bet">
+                      <div class="card-bet-top">
+                        <p class="card-bet__event">Asia Minor: Play-Off</p>
+                        <div class="card-bet__date">
+                          <p class="card-bet__date-month">29 Oct</p>
+                          <p class="card-bet__date-hour">19:00</p>
+                        </div>
+                      </div>
+                      <div class="card-bet__separator"></div>
+                      <div class="card-bet__teams">
+                        <img
+                          class="card-bet__teamA"
+                          src="./images/icon/Card/TeamA.svg"
+                          alt="Business assosiates"
+                        />
+                        <img
+                          class="card-bet__teamB"
+                          src="./images/icon/Card/TeamB.svg"
+                          alt="Forza esports"
+                        />
+                      </div>
+                      <div class="card-bet__bet">
+                        <p class="card-bet__name">Regina Watson</p>
+                        <p class="card-bet__coef">3.22</p>
+                      </div>
+                      <div class="card-bet__bet">
+                        <p class="card-bet__name">Kathryn Jones</p>
+                        <p class="card-bet__coef">2.21</p>
+                      </div>
+                      <div class="card-bet__bottom">
+                        <p class="card-bet__timer">
+                          Starts in: 5 hours 39 min • Bо 3
+                        </p>
+                        <img
+                          class="card-bet__sponsor"
+                          src="./images/icon/Card/ggbet.svg"
+                          alt="ggbet"
+                        />
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="schedule__battles">
+              <div class="card">
+                <div class="card__battles"  id="battlesList">
+                  <div class="card__battles-wrapper">
+                    <div class="card-battle">
+                      <p class="card-battle__name">Group Stage</p>
+                      <div class="card-battle__separator"></div>
+                      <img
+                        class="card-battle__image"
+                        src="./images/icon/Card/P.svg"
+                      />
+                      <div class="card-battle__body">
+                        <div class="card-battle__groups">
+                          <p class="card-battle__group">Group A</p>
+                          <p class="card-battle__group">Group B</p>
+                        </div>
+                        <p class="card-battle__matchNo">Match #1</p>
+                      </div>
+                      <p class="card-battle__map">Map: Erangel</p>
+                    </div>
+
+                    <div class="card-battle">
+                      <p class="card-battle__name">Group Stage</p>
+                      <div class="card-battle__separator"></div>
+                      <img
+                        class="card-battle__image"
+                        src="./images/icon/Card/P.svg"
+                      />
+                      <div class="card-battle__body">
+                        <div class="card-battle__groups">
+                          <p class="card-battle__group">Group A</p>
+                          <p class="card-battle__group">Group B</p>
+                        </div>
+                        <p class="card-battle__matchNo">Match #1</p>
+                      </div>
+                      <p class="card-battle__map">Map: Erangel</p>
+                    </div>
+
+                    <div class="card-battle">
+                      <p class="card-battle__name">Group Stage</p>
+                      <div class="card-battle__separator"></div>
+                      <img
+                        class="card-battle__image"
+                        src="./images/icon/Card/P.svg"
+                      />
+                      <div class="card-battle__body">
+                        <div class="card-battle__groups">
+                          <p class="card-battle__group">Group A</p>
+                          <p class="card-battle__group">Group B</p>
+                        </div>
+                        <p class="card-battle__matchNo">Match #1</p>
+                      </div>
+                      <p class="card-battle__map">Map: Erangel</p>
+                    </div>
+
+                    <div class="card-battle">
+                      <p class="card-battle__name">Group Stage</p>
+                      <div class="card-battle__separator"></div>
+                      <img
+                        class="card-battle__image"
+                        src="images/icon/Card/P.svg"
+                      />
+                      <div class="card-battle__body">
+                        <div class="card-battle__groups">
+                          <p class="card-battle__group">Group A</p>
+                          <p class="card-battle__group">Group B</p>
+                        </div>
+                        <p class="card-battle__matchNo">Match #1</p>
+                      </div>
+                      <p class="card-battle__map">Map: Erangel</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
           </div>
-          <div class="schedule__actions"></div>
+          <div class="schedule__actions">
+            <img class="schedule__actions-left" src="./images/icon/Schedule/Schedule_left.svg">
+            <div class="schedule__actions-dot"></div>
+            <div class="schedule__actions-dot"></div>
+            <div class="schedule__actions-dot"></div>
+            <img class="schedule__actions-right" src="./images/icon/Schedule/Schedule_right.svg">
+          </div>
         </div>
       </article>
       <article class="rules" id="rules">
@@ -141,29 +401,31 @@
               The path to every Major begins with the open qualifiers for the
               regional Minor Championships, spanning Europe, CIS, Americas, and
               Asia.
-              <a class="rules__text-description--active" href="#schedule"> Here is </a>
+              <a class="rules__text-description--active" href="#schedule">
+                Here is
+              </a>
               the schedule of every qualifying stage of StarLadder Major.
             </p>
           </div>
           <div class="rules__order">
             <div class="rules__order-card">
-              <img src="./images/icon/Rules_cup.svg" />
+              <img src="./images/icon/Rules/Rules_cup.svg" />
               <p><strong>Register</strong></p>
               <p class="rules__order-card-text">
                 29 sep, 19:00 – 20 nov, 10:00
               </p>
             </div>
-            <img src="./images/icon/Rules_between.svg" />
+            <img src="./images/icon/Rules/Rules_between.svg" />
             <div class="rules__order-card">
-              <img src="./images/icon/Rules_shield.svg" />
+              <img src="./images/icon/Rules/Rules_shield.svg" />
               <p class="rules__order-card-text">Check-in</p>
               <p class="rules__order-card-text">
                 29 sep, 19:00 – 20 nov, 10:00
               </p>
             </div>
-            <img src="./images/icon/Rules_between.svg" />
+            <img src="./images/icon/Rules/Rules_between.svg" />
             <div class="rules__order-card">
-              <img src="./images/icon/Rules_calendar.svg" />
+              <img src="./images/icon/Rules/Rules_calendar.svg" />
               <p class="rules__order-card-text">Scheduling:</p>
               <p class="rules__order-card-text">
                 29 sep, 19:00 – 20 nov, 10:00
@@ -193,7 +455,7 @@
               <td class="footer__table-columnB">
                 <img
                   class="footer__table-columnB-image"
-                  src="./images/icon/Footer_flag.svg"
+                  src="./images/icon/Footer/Footer_flag.svg"
                   alt="Ukraine flag"
                 />
                 Dianne Russel
@@ -205,7 +467,7 @@
               <td class="footer__table-columnB">
                 <img
                   class="footer__table-columnB-image"
-                  src="./images/icon/Footer_flag.svg"
+                  src="./images/icon/Footer/Footer_flag.svg"
                   alt="Ukraine flag"
                 />
                 Dianne Russel
@@ -217,7 +479,7 @@
               <td class="footer__table-columnB">
                 <img
                   class="footer__table-columnB-image"
-                  src="./images/icon/Footer_flag.svg"
+                  src="./images/icon/Footer/Footer_flag.svg"
                   alt="Ukraine flag"
                 />
                 Dianne Russel
@@ -229,7 +491,7 @@
               <td class="footer__table-columnB">
                 <img
                   class="footer__table-columnB-image"
-                  src="./images/icon/Footer_flag.svg"
+                  src="./images/icon/Footer/Footer_flag.svg"
                   alt="Ukraine flag"
                 />
                 Dianne Russel
@@ -241,7 +503,7 @@
               <td class="footer__table-columnB">
                 <img
                   class="footer__table-columnB-image"
-                  src="./images/icon/Footer_flag.svg"
+                  src="./images/icon/Footer/Footer_flag.svg"
                   alt="Ukraine flag"
                 />
                 Dianne Russel
@@ -253,7 +515,7 @@
               <td class="footer__table-columnB">
                 <img
                   class="footer__table-columnB-image"
-                  src="./images/icon/Footer_flag.svg"
+                  src="./images/icon/Footer/Footer_flag.svg"
                   alt="Ukraine flag"
                 />
                 Dianne Russel
@@ -265,7 +527,7 @@
               <td class="footer__table-columnB">
                 <img
                   class="footer__table-columnB-image"
-                  src="./images/icon/Footer_flag.svg"
+                  src="./images/icon/Footer/Footer_flag.svg"
                   alt="Ukraine flag"
                 />
                 Dianne Russel
@@ -277,7 +539,7 @@
               <td class="footer__table-columnB">
                 <img
                   class="footer__table-columnB-image"
-                  src="./images/icon/Footer_flag.svg"
+                  src="./images/icon/Footer/Footer_flag.svg"
                   alt="Ukraine flag"
                 />
                 Dianne Russel
@@ -289,7 +551,7 @@
               <td class="footer__table-columnB">
                 <img
                   class="footer__table-columnB-image"
-                  src="./images/icon/Footer_flag.svg"
+                  src="./images/icon/Footer/Footer_flag.svg"
                   alt="Ukraine flag"
                 />
                 Dianne Russel

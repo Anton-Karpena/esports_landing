@@ -6,16 +6,12 @@ const dots = document.querySelectorAll('.slider__dot');
 let index = 0;
 
 const activeSlide = (n) => {
-  for (let i = 0; i < slides.length; i += 1) {
-    slides[i].classList.remove('active');
-  }
+  slides.forEach((slide) => slide.classList.remove('active'));
   slides[n].classList.add('active');
 };
 
 const activeDot = (n) => {
-  for (let i = 0; i < dots.length; i += 1) {
-    dots[i].classList.remove('active');
-  }
+  dots.forEach((dot) => dot.classList.remove('active'));
   dots[n].classList.add('active');
 };
 
@@ -28,18 +24,20 @@ const nextSlide = () => {
   if (index === slides.length - 1) {
     index = 0;
     prepareCurrentSlide(index);
+  } else {
+    index += 1;
+    prepareCurrentSlide(index);
   }
-  index += 1;
-  prepareCurrentSlide(index);
 };
 
 const prevSlide = () => {
   if (index === 0) {
     index = slides.length - 1;
     prepareCurrentSlide(index);
+  } else {
+    index -= 1;
+    prepareCurrentSlide(index);
   }
-  index -= 1;
-  prepareCurrentSlide(index);
 };
 
 dots.forEach((item, indexDot) => {
@@ -64,3 +62,21 @@ function updateCountDown() {
 }
 
 setInterval(updateCountDown, 1000);
+
+const matchesButton = document.getElementById('matches');
+const battlesButton = document.getElementById('battles');
+const matches = document.getElementById('matchesList');
+const battles = document.getElementById('battlesList');
+
+const showMatches = () => {
+  battles.classList.remove('active');
+  matches.classList.add('active');
+};
+
+const showBattles = () => {
+  matches.classList.remove('active');
+  battles.classList.add('active');
+};
+
+matchesButton.addEventListener('click', showMatches);
+battlesButton.addEventListener('click', showBattles);
