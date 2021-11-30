@@ -1,6 +1,7 @@
-@import "./utils/fonts";
 @import "./utils/normalize";
 @import "./utils/variables";
+@import "./utils/fonts";
+@import "./utils/mixins.scss";
 @import "./blocks/header";
 @import "./blocks/schedule";
 @import "./blocks/rules";

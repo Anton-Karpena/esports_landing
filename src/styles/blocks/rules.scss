@@ -7,11 +7,20 @@
     padding: 0 200px;
     display: grid;
     grid-template-columns: repeat(12, 1fr);
+
+    @include onMobile {
+      padding: 20px;
+      display: block;
+    }
   }
 
   &__text {
     grid-column: 1 / 6;
     margin-top: 150px;
+
+    @include onMobile {
+      margin-top: 60px;
+    }
 
     &-title {
       font-style: 32px;
@@ -27,6 +36,10 @@
       letter-spacing: 0.01em;
       line-height: 30px;
 
+      @include onMobile {
+        font-size: 14px;
+      }
+
       &--active {
         color: $color-white;
         text-decoration: none;
@@ -39,8 +52,18 @@
     margin: 120px 0 60px;
     display: flex;
 
+    @include onMobile {
+      margin: 60px auto 40px;
+      justify-content: space-evenly;
+    }
+
+    &-split {
+      display: none;
+    }
+
     &-card {
       text-align: center;
+      margin: 0 10px;
 
       &-text {
         font-size: 16px;
@@ -68,6 +91,10 @@
     background-repeat: no-repeat;
     background-position: 40px 18px;
     transition: all $transition-time;
+
+    @include onMobile {
+      margin: 40px auto;
+    }
 
     &:hover {
       background-color: $background-grey;

@@ -1,26 +1,73 @@
 .card {
   &__matches {
     display: none;
+    height: 440px;
+    position: relative;
+    overflow: hidden;
+    width: 100%;
+
+    @include onMobile {
+      position: static;
+      margin: 0 auto;
+      height: 100%;
+    }
 
     &.active {
       display: block;
     }
 
     &-wrapper {
-      margin-bottom: 60px;
+      position: absolute;
       display: flex;
+      width: 100%;
       justify-content: space-between;
+
+      @include onMobile {
+        display: block;
+        position: static;
+      }
     }
   }
   
   &-bet {
-    background-color: $background-grey;
+    position: relative;
     border-radius: 10px;
     transition: $transition-time;
+    background-color: $background-grey;
+    min-width: 25%;
+
+    @include onMobile {
+      min-width: none;
+      margin-bottom: 20px;
+
+      &:last-child {
+        margin-bottom: 40px;
+      }
+    }
 
     &:hover {
       cursor: pointer;
-      opacity: 0.4;
+      background-color: rgba(41, 42, 47, 0.5);
+    }
+
+    &:hover .card__watch {
+      opacity: 1;
+    }
+
+    &:hover &-top {
+      opacity: 0.5;
+    }
+
+    &:hover &__teams {
+      opacity: 0.5;
+    }
+
+    &:hover &__bet {
+      opacity: 0.5;
+    }
+
+    &:hover &__bottom {
+      opacity: 0.5;
     }
 
     &-top {
@@ -101,39 +148,88 @@
     }
 
     &__timer {
-      margin-left: 24px;
+      margin: 0 56px 22px 24px;
       color: $color-grey;
       letter-spacing: 0.01em;
       font-size: 12px;
     }
 
     &__sponsor {
-      margin-right: 24px;
+      margin: 0 24px 22px 0;
     }
   }
 
   &__battles {
     display: none;
+    height: 440px;
+    position: relative;
+    overflow: hidden;
+
+    @include onMobile {
+      position: static;
+      margin: 0 auto;
+      height: 100%;
+    }
 
     &.active {
       display: block;
     }
 
     &-wrapper {
+      position: absolute;
       display: flex;
-      justify-content: space-between;
-      margin-bottom: 60px;
+      width: 100%;
+
+      @include onMobile {
+        display: block;
+        position: static;
+      }
     }
   }
 
   &-battle {
-    background-color: $background-grey;
+    position: relative;
     border-radius: 10px;
-    width: max-content;
+    transition: $transition-time;
+    background-color: $background-grey;
+    min-width: 25%;
+
+    @include onMobile {
+      min-width: none;
+      margin-bottom: 20px;
+
+      &:last-child {
+        margin-bottom: 40px;
+      }
+    }
 
     &:hover {
       cursor: pointer;
+      background-color: rgba(41, 42, 47, 0.5);
+    }
+
+    &:hover .card__watch {
+      opacity: 1;
+    }
+
+    &:hover &__name {
+      opacity: 0.5;
+    }
+
+    &:hover &__separator {
+      opacity: 0.5;
+    }
+
+    &:hover &__image {
       opacity: 0.4;
+    }
+
+    &:hover &__body {
+      opacity: 0.5;
+    }
+
+    &:hover &__map {
+      opacity: 0.5;
     }
 
     &__name {
@@ -149,7 +245,7 @@
       height: 1px;
       background-color: $color-orange;
       transform: translateX(10%);
-      margin-bottom: 10px;
+      margin-bottom: 20px;
     }
 
     &__image {
@@ -164,13 +260,14 @@
     }
 
     &__groups {
-      padding: 20px 60px 40px 24px;
+      padding: 20px 60px 40px 23px;
     }
 
     &__group {
       font-weight: 700;
       font-size: 20px;
       color: $color-white;
+      display: inline-block;
     }
 
     &__matchNo {
@@ -186,10 +283,36 @@
 
     &__map {
       margin: 0;
-      padding: 0 0 21px 24px;
+      padding: 0 0 9px 24px;
       color: $color-grey;
       letter-spacing: 0.01em;
       font-size: 12px;
+    }
+  }
+
+  &__watch {
+    display: flex;
+    align-items: center;
+    opacity: 0;
+    width: 166px;
+    height: 40px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: $color-orange;
+    transition: $transition-time;
+    
+    &-image {
+      margin-left: 20px;
+    }
+
+    &-text {
+      margin-left: 10px;
+      color: $color-white;
+      font-size: 14px;
+      letter-spacing: 0.01em;
+      text-transform: uppercase;
     }
   }
 }

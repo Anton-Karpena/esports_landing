@@ -10,10 +10,20 @@
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
+
+    @include onMobile {
+      background: $color-black;
+      padding: 0 20px;
+      margin: 0;
+    }
   }
 
   &__time {
     margin: 510px 124px 4px;
+
+    @include onMobile {
+      margin: 40px auto;
+    }
   }
 
   &__text {
@@ -23,6 +33,10 @@
       color: $color-white;
       margin: 0;
       text-align: center;
+
+      @include onMobile {
+        font-style: 20px;
+      }
     }
 
     &-timer {
@@ -31,12 +45,20 @@
       color: $color-white;
       margin: 0;
       text-align: center;
+
+      @include onMobile {
+        font-size: 20px;
+      }
     }
   }
 
   &__table {
     background-color: $color-orange;
     margin-bottom: 56px;
+
+    @include onMobile {
+      margin: 0 auto 40px;
+    }
 
     &-head {
       background-color: $color-orange;
@@ -102,6 +124,11 @@
     width: 652px;
     display: flex;
     justify-content: space-evenly;
+    
+    @include onMobile {
+      width: unset;
+      align-self: center;
+    }
 
     &-link {
       text-decoration: none;
@@ -109,6 +136,10 @@
       font-size: 20px;
       font-weight: 700;
       transition: color $transition-time;
+
+      @include onMobile {
+        margin: 0 20px;
+      }
 
       &:hover {
         color: $color-orange;

@@ -5,6 +5,16 @@
     padding: 0 200px;
     display: grid;
     grid-template-columns: repeat(12, 1fr);
+
+    @include onMobile {
+      display: block;
+      padding: 0 20px;
+      margin: 0 auto;
+      background-image: url("../images/pictures/Mobile_wallpaper.jpg");
+      background-repeat: no-repeat;
+      background-size: cover;
+      background-position: center;
+    }
   }
 
   &__nav {
@@ -16,6 +26,11 @@
     position: relative;
     z-index: 1;
 
+    @include onMobile {
+      padding: 20px;
+      margin: 0 0 60px;
+    }
+
     &::after {
       content: "";
       display: block;
@@ -24,6 +39,10 @@
       height: 1px;
       background-color: $color-orange;
       transform: translateY(90px);
+
+      @include onMobile {
+        transform: translateY(60px);
+      }
     }
 
     &-logo {
@@ -33,6 +52,10 @@
     &-link {
       text-decoration: none;
       padding-left: 40px;
+
+      @include onMobile {
+        padding-left: 20px;
+      }
 
       &:first-child {
         padding: 0;
@@ -53,6 +76,10 @@
     margin-bottom: 36px;
     z-index: 1;
 
+    @include onMobile {
+      margin-left: 20px;
+    }
+
     &-image {
       width: 190px;
       height: 60px;
@@ -66,6 +93,11 @@
     font-size: 60px;
     color: $color-white;
     z-index: 1;
+
+    @include onMobile {
+      margin-left: 20px;
+      font-size: 40px;
+    }
   }
 
   &__text {
@@ -75,6 +107,11 @@
     font-weight: 400;
     font-size: 18px;
     z-index: 1;
+
+    @include onMobile {
+      margin-left: 20px;
+      font-size: 16px;
+    }
   }
 
   &__actions {
@@ -82,6 +119,12 @@
     margin-bottom: 200px;
     display: flex;
     z-index: 1;
+
+    @include onMobile {
+      justify-content: center;
+      margin: 0;
+      padding-bottom: 100px;
+    }
 
     &-read {
       width: 240px;
@@ -97,6 +140,12 @@
       font-size: 16px;
       font-weight: 600;
       transition: all $transition-time;
+
+      @include onMobile {
+        width: 160px;
+        height: 40px;
+        font-size: 12px;
+      }
 
       &:hover {
         background-color: $color-black;
@@ -120,6 +169,12 @@
       font-weight: 600;
       border: 1px solid $color-orange;
       transition: all $transition-time;
+
+      @include onMobile {
+        width: 160px;
+        height: 40px;
+        font-size: 12px;
+      }
 
       &:hover {
         color: $color-white;
