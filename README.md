@@ -1,5 +1,6 @@
 Esports landing page
 Technologies used: HTML/CSS, SCSS, BEM, JavaScript.
+Desktop and mobile layouts realised.
 
 - [Demo link](https://Anton-Karpena.github.io/esports_landing)
 
